@@ -79,7 +79,11 @@ form{
 
 footer{
     grid-area: footer;
-}
+    background-color: rgb(251, 246, 240);
+    border: 1px solid;
+    bottom: 20px;
+
+  }
 
 ul > li{
     display: inline-block;
@@ -89,4 +93,15 @@ ul > li{
 
 p{
     font-size: 16px;
+}
+h5{
+    padding: 0px 16px;
+}
+
+
+.left{
+    padding: 0px 16px;
+}
+.right{
+    padding: 0px 16px;
 }
