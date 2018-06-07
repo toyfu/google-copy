@@ -3,9 +3,88 @@
     padding: 0;
     font-size: 100%;
 }
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 64px 1fr 80px;
+    grid-template-areas: 
+    ". nav nav"
+    "section section section"
+    "footer footer footer";
+    height: 100vh;
+    width: auto;
+    grid-gap: 16px;
+}
+
+nav{
+    display: grid;
+    grid-area: nav;
+        justify-self: end;
+    padding: 16px;
+}
+
+.center{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 100px 60px;
+    grid-area: section;
+    justify-self: center;
+    align-items: center;
+    grid-template-areas: 
+    "logo logo"
+    "formla formla"
+    "button button"
+    "braille braille";
+    grid-gap: 16px;
+    justify-items: center;
+}
+.logo{
+    grid-area: logo;
+    justify-self: center;
+    align-self: center;
+}
+.formla{
+    display: grid;
+    grid-area: formla;
+    justify-self: center;
+    align-self: center;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+input{
+    width: 500px;
+    height: 40px;
+}
+
+button{
+    width: 240px;
+    height: 64px;
+    padding: 16px;
+    margin: 16px;
+}
+
+.button{
+    grid-area: button;
+    justify-items: center;
+    justify-self: center;
+}
+.braille{
+    grid-area: braille;
+}
+form{
+    align-content: center;
+}
+
+footer{
+    grid-area: footer;
+}
 
 ul > li{
-    display: inline-block
+    display: inline-block;
+    padding: 8px;
+    align-self: center;
 }
 
 p{
